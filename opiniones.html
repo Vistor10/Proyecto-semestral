@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+</head>
+<body>
+    
+        <main>
+            <form action="" method="post">
+                <div>
+                    <label for="Calificacion">Que calificacion le darias:</label>
+                    <form>
+                        <p class="clasificacion">
+                          <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                          --><label for="radio1">★</label><!--
+                          --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                          --><label for="radio2">★</label><!--
+                          --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                          --><label for="radio3">★</label><!--
+                          --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                          --><label for="radio4">★</label><!--
+                          --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                          --><label for="radio5">★</label>
+                        </p>
+                      </form>
+                </div><br>
+                <div>
+                    <label for="fecha">Fecha en la que fue:</label>
+                    <input type="date" id="fecha" name="fecha" required><br>
+                </div><br>
+                <div>
+                    <label for="opinion_escrita">Escriba su opinion:</label><br>
+                    <textarea id="opinion_escrita" name="opinion_escrita" rows="4" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Mandar opinion</button>
+                </div><br>
+            </form>
+        </main>    
+        <span><a href= "paginarestaurant.html">volver</span>
+            
+</body>
+</html>
