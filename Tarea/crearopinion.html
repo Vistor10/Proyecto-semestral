@@ -21,10 +21,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="paginainicio.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="../index/paginainicio.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="forocritico.html">Mi foro</a>
+                  <a class="nav-link" href="../index/forocritico.html">Mi foro</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +48,19 @@
       <br>
       <br>  
       <main>
-            <form action="" method="post">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col"style="text-align: left;">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccionar Restaurant</option>
+                <option value="1">La Cabrera</option>
+                <option value="2">Zanzibar</option>
+                <option value="3">Capogrossi</option>
+                <option value="4">Borago</option>
+                <option value="5">Ambrosia Bistro</option>
+                <option value="6">Divertimento Chileno</option>
+              </select>
+              <form action="" method="post">
                 <div>
                     <label for="Calificacion">¿Qué calificación le darías?:</label>
                     <form>
@@ -70,15 +82,20 @@
                     <label for="fecha">Fecha de visita:</label>
                     <input type="date" id="fecha" name="fecha" required><br>
                 </div><br>
-                <div>
+                  <div>
                     <label for="opinion_escrita">Escriba su opinión:</label><br>
                     <textarea id="opinion_escrita" name="opinion_escrita" rows="4" required></textarea>
-                </div>
+                  </div>
                 <div>
                     <button type="submit">Publicar opinión</button>
                 </div><br>
-            </form>
-        </main>    
+              </form>
+            </div>
+          </div>
+        </div>
+        
+            
+      </main>    
           <span><a href= "../index/forocritico.html">Volver</span>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>                            
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
