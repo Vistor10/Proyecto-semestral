@@ -1,4 +1,33 @@
-header .titulo {
-    background-color: #a06204;
-    
-  }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+body h1 { text-align: center;}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.fondoComun {
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+}
+.fondoComun, .fondoUser {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
+}
+
+.fondoComun, .fondoGenerico {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
+}
