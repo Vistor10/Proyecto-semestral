@@ -56,3 +56,18 @@ body {
 .fondoComun, .fondoGenerico {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
 }
+
+img {
+ height: 300px;
+ width: 300px;
+
+}
+
+.img {
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.1); /* Ajusta el valor para el nivel de agrandamiento deseado */
+}
+
