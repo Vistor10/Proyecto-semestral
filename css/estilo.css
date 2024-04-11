@@ -70,4 +70,8 @@ img {
 .img:hover {
   transform: scale(1.1); /* Ajusta el valor para el nivel de agrandamiento deseado */
 }
+.logo {
+  height: 45px;
+ width: 45px;
+}
 
