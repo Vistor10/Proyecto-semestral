@@ -117,3 +117,57 @@ footer {
 .social-media ul li a:hover {
   text-decoration: underline;
 }
+
+/*Pagina Restaurant*/
+
+
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.restaurant-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #ffc107;
+}
+
+.address, .how-to-get {
+  margin-bottom: 10px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.reviewer-info {
+  margin-bottom: 5px;
+}
+
+.review p {
+  margin: 0;
+}
