@@ -53,8 +53,10 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
 }
 
-.fondoComun, .fondoGenerico {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
+.fondoGenerico {
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/Fondo.jpg");
 }
 
 img {
@@ -190,4 +192,52 @@ footer {
 
 .rating input:checked ~ label {
   color: #ffc107;
+}
+
+/*página foro crítico*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.perfil {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 1300px;
+  padding: 20px;
+  background-color: #e2e1e1;
+  border-radius: 10px;
+  box-shadow: 0 1 10px rgba(165, 110, 110, 0.1);
+  margin-bottom: 50px;
+}
+.perfil h1, .perfil h2, .perfil p {
+  text-align: left;
+  margin: 2.0;
+}
+.perfil h1 {
+  font-size: 24px;
+  color: #000000;
+}
+.perfil h2 {
+  font-size: 18px;
+  color: #000000;
+}
+.perfil p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.DatosRestaurant {
+  border-radius: 10px;
+  background-color: #ffffff;
+  background-position: right;
+  width: 1250px;
+}
+.acciones {
+  white-space: nowrap;
 }
