@@ -54,9 +54,7 @@ body {
 }
 
 .fondoGenerico, .fondoGenerico2 {
-  height: 300px;
-  width: 300px;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/Fondo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url("../img/Fondo.jpg");
 }
 
 img {
@@ -208,7 +206,7 @@ body {
   background-position: center;
   top: 0;
   left: 0;
-  width: 1300px;
+  width: auto;
   padding: 20px;
   background-color: #e2e1e1;
   border-radius: 10px;
@@ -236,7 +234,7 @@ body {
   border-radius: 10px;
   background-color: #ffffff;
   background-position: right;
-  width: 1250px;
+  width: auto;
 }
 .acciones {
   white-space: nowrap;
@@ -256,7 +254,7 @@ body {
   background-position: center;
   top: 0;
   left: 0;
-  width: 1300px;
+  width: auto;
   padding: 20px;
   background-color: #e2e1e1;
   border-radius: 10px;
