@@ -1,7 +1,5 @@
-const form = document.getElementById('loginform');
+const form = document.getElementById('savepassword');
 const email = document.getElementById('email');
-const password = document.getElementById('password');
-
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -34,9 +32,7 @@ const isValidEmail = email => {
 
 const validateInputs = () => {
 
-
     const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();   
 
     if(emailValue === '') {
         setError(email, 'Se requiere un correo');
@@ -44,14 +40,6 @@ const validateInputs = () => {
         setError(email, 'Ingrese un correo electronico valido');
     } else {
         setSuccess(email);
-    }
-
-    if(passwordValue === '') {
-        setError(password, 'Se requiere una contraseña');
-    } else if (passwordValue.length < 8 ) {
-        setError(password, 'La contraseña debe tener al menos 8 caracteres.')
-    } else {
-        setSuccess(password);
     }
 
     document.getElementById("miBoton").addEventListener("click", function() {
