@@ -68,24 +68,18 @@
 
       <div class="DatosRestaurant">
         <div class="col">
-          <table class="table table-hover">
-            <tr>
-              <th>Nombre Restaurant</th>
-              <th>Dirección</th>
-              <th>Opinión</th>
-              <th>Fecha de visita</th>
-              <th>Acciones</th>
-            </tr>
-            <tr>
-              <td>La Cabrera</td>
-              <td>Calle Alonso de Córdova 4263 Vitacura.</td>
-              <td>Bebidas de alto lujo, junto a riquezas simpler, recomendado.</td>
-              <td>15/7/23</td>
-              <td class="acciones">
-                <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square"></i>Editar</button>
-                <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash3"></i> Eliminar</button>
-              </td>
-            </tr>
+          <table id="critiquesTable" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Nombre Restaurant</th>
+                <th>Dirección</th>
+                <th>Opinión</th>
+                <th>Fecha de visita</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--tabla-->
+            </tbody>
           </table>
         </div>
       </div>
@@ -101,6 +95,11 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="../js/opiniones.js"></script>
+
+
 </body>
 
 </html>
