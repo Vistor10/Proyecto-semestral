@@ -1,6 +1,8 @@
 const form = document.getElementById('loginform');
+const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const password2 = document.getElementById('password2')
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -33,9 +35,16 @@ const isValidEmail = email => {
 
 const validateInputs = () => {
 
+    const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-  
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Se requiere que ingrese un nombre');
+    } else {
+        setSuccess(username);
+    }
 
     if(emailValue === '') {
         setError(email, 'Se requiere un correo');
@@ -51,6 +60,14 @@ const validateInputs = () => {
         setError(password, 'La contraseña debe tener al menos 8 caracteres.')
     } else {
         setSuccess(password);
+    }
+
+    if(password2Value === '') {
+        setError(password2, 'Porfavor confirma tu contraseña');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Las contraseñas no coinciden");
+    } else {
+        setSuccess(password2);
     }
 
 

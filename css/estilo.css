@@ -278,3 +278,9 @@ body {
   color: #000000;
 }
 /* validaciones login */
+
+.form-group .error {
+  color: #ff3860;
+  font-size: 15px;
+  height: 13px;
+}
