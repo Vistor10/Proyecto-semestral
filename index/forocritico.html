@@ -46,45 +46,73 @@
   </nav><br>
 
   <br>
-  <div class="container text-center">
+  <div class="tablaperfil">
     <div class="row">
       <div class="col">
         <h1>Perfil</h1>
+        <form id="formGeneral" style="text-align: left;">
+          <div class="form-group">
+            <h1><b>Ricardo Perez</b></h1>
+            <h2>Profesión: Crítico Gastronómico</h2>
+            <p><b>Correo: ripere@gmail.com</b></p>
+            <label for="restaurantSelection" class="form-label">Seleccionar Restaurante: </label>
+            <select class="form-select" id="restaurantSelection" name="restaurantSelection" aria-label="Default select example">
+                <option value="Seleccionar" selected>Seleccionar Restaurante: </option>
+                <option value="La Cabrera">La Cabrera</option>
+                <option value="Zanzibar">Zanzibar</option>
+                <option value="Capogrossi">Capogrossi</option>
+                <option value="Borago">Borago</option>
+                <option value="Ambrosia Bistro">Ambrosia Bistro</option>
+                <option value="Divertimento Chileno">Divertimento Chileno</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="calificacion" class="form-label">Calificación: </label>
+            <div class="rating" name="rRating" id="rRating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+            <div class="form-group">
+              <label for="dateVisit" class="form-label">Fecha de visita</label>
+              <input type="date" id="dateVisit" name="dateVisit" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="opinionTable" class="form-label">Escriba su opinión</label>
+              <textarea id="opinionTable" name="opinionTable" class="form-control" rows="4"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Publicar opinión</button>
+        </form>
       </div>
     </div>
   </div>
-  <div class="perfil">
-    <div class="container-fluid">
-      <div class="row">
 
-        <div class="col" style="text-align: left;">
-          <h1><b>Ricardo Perez</b></h1>
-          <h2>Profesión: Crítico Gastronómico</h2>
-          <p><b>Correo: ripere@gmail.com</b></p>
-          <a class="btn btn-primary" href="../tarea/crearopinion.html" role="button">Crear Nueva Reseña</a>
-        </div>
-      </div>
-      <br>
-
-      <div class="DatosRestaurant">
-        <div class="col">
-          <table id="critiquesTable" class="table table-hover">
-            <thead>
-              <tr>
-                <th>Nombre Restaurant</th>
-                <th>Dirección</th>
-                <th>Opinión</th>
-                <th>Fecha de visita</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!--tabla-->
-            </tbody>
-          </table>
-        </div>
-      </div>
+  <div class="DatosRestaurant">
+    <h3>Criticas</h3>
+      <table id="critiquesTable" class="table">
+        <thead>
+          <tr>
+            <th>Nombre Restaurant</th>
+            <th>Fecha de visita</th>
+            <th>Opinión</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--tabla-->
+        </tbody>
+      </table>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
