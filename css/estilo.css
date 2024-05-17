@@ -74,6 +74,9 @@ img {
   height: 45px;
  width: 45px;
 }
+body.inicio {
+  background-color: #e4e0d7;
+}
 /*Footer de abajo */
 footer {
   background-color: #333;
@@ -120,7 +123,10 @@ footer {
 
 /*Pagina Restaurant*/
 
-
+body.bodyrestaurant {
+  font-family: Arial, sans-serif;
+  background-color: #e4e0d7;
+}
 
 .contenedor {
   max-width: 800px;
