@@ -35,6 +35,16 @@ const isValidEmail = email => {
     return re.test(String(email).toLowerCase());
 };
 
+const validateDateOfBirth = () => {
+    const fechaValue = new Date(fecha.value);
+
+    if (isNaN(fechaValue.getTime()) || fechaValue.getFullYear() < 1900 || fechaValue.getFullYear() > new Date().getFullYear()) {
+        setError(fecha, 'Por favor ingrese una fecha de nacimiento válida');
+    } else {
+        setSuccess(fecha);
+    }
+};
+
 const validateInputs = () => {
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
@@ -83,7 +93,7 @@ const validateInputs = () => {
     if (!fechaValue) {
         setError(fecha, 'Seleccione su fecha de nacimiento');
     } else {
-        setSuccess(fecha);
+        validateDateOfBirth(); 
     }
 
     if (rolValue === 'dueño' && !certformValue) {
@@ -92,9 +102,9 @@ const validateInputs = () => {
         setSuccess(certform);
     }
 
-    // Redirigir solo si todos los campos son válidos
+    
     if (usernameValue && emailValue && isValidEmail(emailValue) && passwordValue && passwordValue.length >= 8 && password2Value === passwordValue && rolValue && fechaValue && (rolValue !== 'dueño' || (rolValue === 'dueño' && certformValue))) {
-        // Redirigir a otra página
+     
         window.location.href = "../index/paginainicio.html";
     }
 };
