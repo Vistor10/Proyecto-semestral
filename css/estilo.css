@@ -50,7 +50,7 @@ body {
   left: 0;
 }
 .fondoComun, .fondoUser {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),  url("../img/comida2.webp");
 }
 
 .fondoGenerico, .fondoGenerico2 {
