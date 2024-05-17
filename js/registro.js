@@ -3,6 +3,9 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const rol = document.getElementById('rol');
+const fecha = document.getElementById('fecha');
+const certform = document.getElementById('certform');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -37,6 +40,9 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
+    const rolValue = rol.value;
+    const fechaValue = fecha.value;
+    const certformValue = certform.value;
 
     if (usernameValue === '') {
         setError(username, 'Se requiere que ingrese un nombre');
@@ -68,8 +74,26 @@ const validateInputs = () => {
         setSuccess(password2);
     }
 
+    if (!rolValue) {
+        setError(rol, 'Seleccione un rol');
+    } else {
+        setSuccess(rol);
+    }
+
+    if (!fechaValue) {
+        setError(fecha, 'Seleccione su fecha de nacimiento');
+    } else {
+        setSuccess(fecha);
+    }
+
+    if (rolValue === 'dueño' && !certformValue) {
+        setError(certform, 'Por favor adjunte su certificado de dueño');
+    } else {
+        setSuccess(certform);
+    }
+
     // Redirigir solo si todos los campos son válidos
-    if (usernameValue && emailValue && isValidEmail(emailValue) && passwordValue && passwordValue.length >= 8 && password2Value === passwordValue) {
+    if (usernameValue && emailValue && isValidEmail(emailValue) && passwordValue && passwordValue.length >= 8 && password2Value === passwordValue && rolValue && fechaValue && (rolValue !== 'dueño' || (rolValue === 'dueño' && certformValue))) {
         // Redirigir a otra página
         window.location.href = "../index/paginainicio.html";
     }
