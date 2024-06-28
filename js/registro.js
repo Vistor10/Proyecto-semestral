@@ -105,6 +105,6 @@ const validateInputs = () => {
     
     if (usernameValue && emailValue && isValidEmail(emailValue) && passwordValue && passwordValue.length >= 8 && password2Value === passwordValue && rolValue && fechaValue && (rolValue !== 'dueño' || (rolValue === 'dueño' && certformValue))) {
      
-        window.location.href = "../index/paginainicio.html";
+        window.location.href = "../Logins/suscripcion.html";
     }
 };
